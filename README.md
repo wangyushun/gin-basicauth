@@ -44,6 +44,12 @@ func (u UserProfile) CheckPassword(pw string) bool {
 
 	return u.Password == pw
 }
+
+// UsernameColumnName Return the table field name corresponding to the username field
+func (u UserProfile) UsernameColumnName() string {
+
+	return "username"
+}
 ```
 ### Use in Gin
 ```go
